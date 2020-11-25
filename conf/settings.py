@@ -165,11 +165,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-cloudinary.config(
-  cloud_name =  os.environ.get('CLOUDINARY_CLOUD_NAME'),  
-  api_key =  os.environ.get('CLOUDINARY_API_KEY'),  
-  api_secret =  os.environ.get('CLOUDINARY_API_SECRET'), 
-)
+CLOUDINARY = {
+  'cloud_name': 'seers-enterprise',  
+  'api_key': '251443512384465',  
+  'api_secret': 'CXb5M2b_L-JAV0HkEFxbLIJXUQU',  
+}
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
     
