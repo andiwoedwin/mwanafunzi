@@ -166,9 +166,9 @@ STATICFILES_DIRS = [
 ]
 
 cloudinary.config(
-  cloud_name = 'dnqylsr2v',  
-  api_key = '229555255322797',  
-  api_secret = '7ckL7ibfkw7JIwMJ8tVcOr1PUIc'
+  cloud_name =  os.environ.get('CLOUDINARY_CLOUD_NAME'),  
+  api_key =  os.environ.get('CLOUDINARY_API_KEY'),  
+  api_secret =  os.environ.get('CLOUDINARY_API_SECRET'), 
 )
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
