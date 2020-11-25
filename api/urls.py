@@ -6,7 +6,6 @@ from knox import views as knox_views
 from django.conf import settings
 
 from rest_framework.authtoken.views import obtain_auth_token
-from rest_framework_simplejwt import views as jwt_views
 from api import views
 from django.conf.urls.static import static
 
